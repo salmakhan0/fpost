@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background :linear-gradient(#00C6FF , #0078FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    width: 500px;
+}
+.post header {
+    font-size: 22px;
+    font-weight:600;
+    text-align:center;
+    padding: 17px 0;
+    border-bottom: 1px solid #bfbfbf;
+}
+.post form {
+    margin: 20px 25px;
+}
+.post form :where(.content, .details .privacy) {
+    display: flex;
+    align-items: center;
+}
+.post form .content img {
+    max-width: 52px;
+}
+.post form .content .details {
+    margin: -3px 0 0 12px;
+}
+form .content .details p {
+    font-size: 17px;
+    font-weight: 500;
+}
+form .content .details .privacy {
+    max-width: 98px;
+    font-size: 11px;
+    background: #e4e6eb;
+    justify-content: space-between;
+    padding: 0 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.details .privacy span {
+    font-size: 13px;
+    margin-top: 1px;
+    font-weight: 500;
+}
+.details .privacy i:last-child{
+    font-size: 13px;
+    margin-left: 1px;
+}
+.post form :where(textarea ,button)
+{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.post form textarea {
+    resize: none;
+    font-size: 18px;
+    margin-top: 30px;
+    min-height: 100px;
+}
+.post form :where(.theme-emoji, .options)
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .theme-emoji img{
+    cursor: pointer;
+}
+form .theme-emoji img:last-child{
+    max-width: 24px;
+}
+form .options
+{
+    height: 57px;
+    border-radius: 7px;
+    border: 1px solid #b9b9b9;
+    padding: 0 15px;
+    margin: 15px 0;
+}
+form .options p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #595959;
+}
+form .options :where() .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    
+
+    
