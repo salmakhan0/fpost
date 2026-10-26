@@ -18,6 +18,9 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
     width: 500px;
 }
+.container .post {
+    display: none;
+}
 .post header {
     font-size: 22px;
     font-weight:600;
@@ -97,12 +100,40 @@ form .options p{
     font-weight: 500;
     color: #595959;
 }
-form .options :where() .list{
+form .options :where(.list, li){
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+form .options .list li{
+    list-style: none;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    background: #f0f1f4;
+}
+.options .list li:hover{
+    background: #f0f1f4;
+}
+.options .list li img{
+    cursor: pointer;
+    width: 22px;
+}
+form button{ 
+    color: #bcc0c4;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 7x;
+    height: 53px;
+    cursor: no-drop;
+    background: #e7e5e9;
+}
+form textarea:valid ~ button{
+    background: #1877f2;
+    color: #fff;
+    cursor: pointer;
+}
+    
 
     
 
