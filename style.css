@@ -100,7 +100,8 @@ form .options p{
     font-weight: 500;
     color: #595959;
 }
-form .options :where(.list, li){
+form .options :where(.list, li),
+.audience header .arrow-back{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,8 +134,39 @@ form textarea:valid ~ button{
     color: #fff;
     cursor: pointer;
 }
-    
-
-    
-
+.audience header{
+    border-bottom: 1px solid #bfbfbf;
+    text-align: center;
+    position: relative;
+    padding: 17px 0;
+}  
+.audience header .arrow-back{
+    position: absolute;
+    left: 25px;
+    height: 35px;
+    width: 35px;
+    background: #e4e6eb;
+    border-radius: 50%;
+    color: #747474;
+    cursor: pointer;
+}
+.audience header p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.audience .content{
+    margin: 20px 25px 0;
+}
+.audience .content p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.audience .content span{
+    font-size: 13px;
+    color: #65676b;
+}
+.audience .list{  
+    margin: 15px 16px 20px;
+}
+.audience .list li{
     
